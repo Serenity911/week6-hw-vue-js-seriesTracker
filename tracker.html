@@ -15,18 +15,21 @@
       <select id="series">
         <option value="" disabled selected></option>
         <option value="Doctor Who">Doctor Who</option>
-        <option value="Black Sails">Black Sails</option>
-        <option value="Lost">Lost</option>
+        <option value="Game of Throne">Game of Throne</option>
+        <option value="Peaky Blinders">Peaky Blinders</option>
       </select>
       <div class="form-item">
         <label for="season" class="primary">Season</label>
         <select id="season">
-          <!-- <option value="" disabled selected></option> -->
+          <option value="" disabled selected></option>
+          <!-- <option value="1s">1s</option> -->
         </select>
       </div>
       <div class="form-item">
         <label for="episode" class="primary">Episode</label>
         <select id="episode">
+          <option value="1e" selected>1e</option>
+
           <!-- <option value="" disabled selected></option> -->
         </select>
       </div>
@@ -37,6 +40,7 @@
       <button type="submit" value="save">Save</button>
     </div>
   </form>
+  <button type="submit" value="clear" id='delete-button'>Clear list</button>
   <h2>You have watched:</h2>
   <ul class="list">
 
