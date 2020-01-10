@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Tracker</title>
+  <script src = 'js/tracker.js'></script>
+  <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/tracker.css" /> -->
+</head>
+<body>
+  <h1>Tracker!</h1>
+  <h3>Track a new episode you have watched:</h3>
+  <form id="inputForm">
+    <div id="form-wrapper">
+      <label for="series" class="primary">Series:</label>
+      <select id="series">
+        <option value="" disabled selected></option>
+        <option value="Doctor Who">Doctor Who</option>
+        <option value="Black Sails">Black Sails</option>
+        <option value="Lost">Lost</option>
+      </select>
+      <div class="form-item">
+        <label for="season" class="primary">Season</label>
+        <select id="season">
+          <!-- <option value="" disabled selected></option> -->
+        </select>
+      </div>
+      <div class="form-item">
+        <label for="episode" class="primary">Episode</label>
+        <select id="episode">
+          <!-- <option value="" disabled selected></option> -->
+        </select>
+      </div>
+      <div class="form-item">
+        <label for="note" class="primary">Note</label>
+        <input type="text" id="note" required/>
+      </div>
+      <button type="submit" value="save">Save</button>
+    </div>
+  </form>
+  <h2>You have watched:</h2>
+  <ul class="list">
+
+  </ul>
+</body>
+</html>
