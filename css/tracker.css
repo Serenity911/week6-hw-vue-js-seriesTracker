@@ -1,0 +1,29 @@
+#form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-item {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  margin-bottom: 0.2rem;
+}
+
+.list ul {
+  border: solid thin grey;
+  background-color: aliceblue;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+li > h4, p {
+margin: 0.4rem;  
+}

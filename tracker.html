@@ -4,33 +4,32 @@
   <meta charset="utf-8">
   <title>Tracker</title>
   <script src = 'js/tracker.js'></script>
-  <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/tracker.css" /> -->
+  <link rel="stylesheet" type="text/css" media="screen" href="css/tracker.css" />
 </head>
 <body>
   <h1>Series tracker!</h1>
   <h3>Track a new episode you have watched:</h3>
   <form id="inputForm">
     <div id="form-wrapper">
-      <label for="series" class="primary">Series:</label>
-      <select id="series">
-        <option value="" disabled selected></option>
-        <option value="Doctor Who">Doctor Who</option>
-        <option value="Game of Thrones">Game of Throne</option>
-        <option value="Peaky Blinders">Peaky Blinders</option>
-      </select>
       <div class="form-item">
-        <label for="season" class="primary">Season</label>
-        <select id="season">
+        <label for="series" class="primary">Series:</label>
+        <select id="series">
           <option value="" disabled selected></option>
-          <!-- <option value="1s">1s</option> -->
+          <option value="Doctor Who">Doctor Who</option>
+          <option value="Game of Thrones">Game of Throne</option>
+          <option value="Peaky Blinders">Peaky Blinders</option>
         </select>
       </div>
       <div class="form-item">
-        <label for="episode" class="primary">Episode</label>
+        <label for="season" class="primary">Season:</label>
+        <select id="season">
+          <option value="" disabled selected></option>
+        </select>
+      </div>
+      <div class="form-item">
+        <label for="episode" class="primary">Episode:</label>
         <select id="episode">
-          <option value="1e" selected>1e</option>
-
-          <!-- <option value="" disabled selected></option> -->
+          <option value="" disabled selected></option>
         </select>
       </div>
       <div class="form-item">
@@ -38,9 +37,9 @@
         <input type="text" id="note" required/>
       </div>
       <button type="submit" value="save">Save</button>
+      <button type="submit" value="clear" id='delete-button'>Clear list</button>
     </div>
   </form>
-  <button type="submit" value="clear" id='delete-button'>Clear list</button>
   <h2>You have watched:</h2>
   <div class="list">
 
