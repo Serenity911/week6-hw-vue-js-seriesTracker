@@ -1,3 +1,7 @@
+body {
+  margin-left: 2rem;
+}
+
 #form-wrapper {
   display: flex;
   flex-direction: column;
@@ -15,7 +19,20 @@ button {
 
 .list ul {
   border: solid thin grey;
-  background-color: aliceblue;
+}
+
+#DoctorWho {
+  background-color: rgb(64, 58, 184);
+}
+
+#GameofThrones {
+  background-color: rgb(231, 70, 70);
+
+}
+
+#PeakyBlinders {
+  background-color: rgb(81, 107, 130);
+
 }
 
 li {
@@ -25,5 +42,5 @@ li {
 }
 
 li > h4, p {
-margin: 0.4rem;  
+  margin: 0.4rem;
 }
